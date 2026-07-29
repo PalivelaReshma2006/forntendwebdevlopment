@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>table forms</title>
+        <style>
+        th, td {
+            border: 1px solid black;
+        }
+        input, textarea {
+            width: 100%;
+        }
+    </style>
+    </head>
+    <body>
+        <form><br>
+            <table border="1"
+            cellpadding="10"
+            align="center"
+            style="
+            width: 50%;
+            text-align:left;
+            border-collapse: collapse;"><br>
+                <tr>
+                    <th ><label for="Name">Name:</label></th>
+                    <th colspan="4"><input type="text"  id="name" /></th>
+                </tr>
+                 <tr>
+                    <th ><label for="SurName">SurName:</label></th>
+                    <th colspan="4"><input type="text"  id="SurName"/></th>
+                </tr>
+                <tr>
+                    <th ><label for="date of birth">DOB:</label></th>
+                    <th colspan="4"><input type="date" placeholder="DD-MM-YYYY"/></th>
+                </tr>
+                 <tr>
+                    <th ><label for="Address">Address:</label></th>
+                    <th colspan="4"><textarea rows="5" cols="25"></textarea></th>
+                </tr>
+                 <tr>
+                    <th><label for="Gender">Gender:</label></th>
+                    <td>
+                        <table border="1"
+                        cellpadding="10"
+                        style="
+                        width: 100%;
+                        border-collapse: collapse;">
+                    
+                    <th>male</th>
+                    <th><input type="radio" name="gender" /></th>
+                    <th> female</th>
+                    <th><input type="radio" name="gender"/></th>
+                    </table>  
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="languages">languages:</label></th>
+                    <td>
+                        <table border="1"
+                        cellpadding="10"
+                        style="
+                        width: 100%;
+                        border-collapse: collapse;">
+                    <th>english</th>
+                    <td><input type="checkbox" name="languages" /></td>
+                    <th> telugu</th>
+                    <td><input type="checkbox" name="languages"/></td>
+                    </table>  
+                    </td>
+                </tr>
+                <tr>
+                    <th>Time:</th>
+                    <td colspan="6"><input type="time"  id="time"/></td>
+                </tr>
+                 <tr>
+                    <th>month:</th>
+                    <td colspan="6"><input type="month"  id="month"/></td>
+                </tr>
+                <tr>
+                    <th>week:</th>
+                    <td colspan="6"><input type="week"  id="week"/></td>
+                </tr>
+                <tr>
+                    <th>Datetime-local:</th>
+                    <td colspan="4"><input type="datetime-local" placeholder="DD-MM-YYYY"/></td>
+                </tr>
+                <tr>
+                    <th>file:</th>
+                    <td colspan="4"><input type="file" name="uploaded file" /></td>
+                </tr>
+                <tr>
+                    <th>range:</th>
+                    <td colspan="4"><input type="range"  name="range"/></td>
+                </tr>
+                <tr>
+                    <th>URL:</th>
+                    <td colspan="4"><input type="url" name="url"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>
